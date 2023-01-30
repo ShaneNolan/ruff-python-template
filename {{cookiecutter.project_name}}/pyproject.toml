@@ -6,7 +6,7 @@ authors = []
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.9,<4.0"
+python = ">=3.10,<4.0"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^0.991"
@@ -24,6 +24,7 @@ line-length = 88
 skip-string-normalization = true
 
 [tool.ruff]
+target-version = "py310"
 line-length = 88
 
 format = "grouped"
@@ -179,5 +180,5 @@ addopts = [
   "--strict",
   "--cov={{cookiecutter.project_name}} tests/",
   "--cov-report=term-missing:skip-covered",
-  "--cov-fail-under=0"
+  "--cov-fail-under=80"
 ]
