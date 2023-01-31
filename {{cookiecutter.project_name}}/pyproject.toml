@@ -170,7 +170,7 @@ xfail_strict = true
 
 # Extra options:
 addopts = [
-  "--strict",
+  "--strict-markers",
   "--cov={{cookiecutter.project_name}} tests/",
   "--cov-report=term-missing:skip-covered",
   "--cov-fail-under=80"
