@@ -9,5 +9,3 @@
 
 * [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-
-**You might need the pre-release version of Ruff.** 
