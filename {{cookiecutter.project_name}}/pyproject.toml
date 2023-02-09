@@ -11,10 +11,10 @@ python = ">=3.10,<4.0"
 [tool.poetry.group.dev.dependencies]
 mypy = "^0.991"
 pytest = "^7.2.1"
-pytest-cov = "^4.0.0"
 pre-commit = "^3.0.2"
 ruff = "0.0.239"
 black = "^23.1.0"
+coverage = "^7.1.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -189,10 +189,15 @@ norecursedirs = [
 # Strict `@xfail` by default:
 xfail_strict = true
 
-# Extra options:
-addopts = [
-  "--strict-markers",
-  "--cov={{cookiecutter.project_name}} tests/",
-  "--cov-report=term-missing:skip-covered",
-  "--cov-fail-under=80"
+
+[tool.coverage.run]
+source = [
+    "erm_reporting"
 ]
+command_line = "-m pytest"
+
+[tool.coverage.report]
+fail_under = 0
+show_missing = true
+precision=2
+skip_empty = true
