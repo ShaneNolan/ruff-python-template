@@ -199,5 +199,5 @@ command_line = "-m pytest"
 [tool.coverage.report]
 fail_under = 0
 show_missing = true
-precision=2
+precision = 2
 skip_empty = true
