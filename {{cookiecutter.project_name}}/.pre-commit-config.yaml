@@ -37,10 +37,17 @@ repos:
         files: ^({{cookiecutter.project_name.lower().replace('-', '_')}}/|tests/)
         language: system
         types: [python]
-      - id: coverage
+      - id: pytest
         name: project-pytest
-        description: runs pytest along with coverage
-        entry: pytest
+        description: runs pytest via coverage
+        entry: poetry run coverage run
+        files: ^({{cookiecutter.project_name.lower().replace('-', '_')}}/|tests/)
+        language: system
+        types: [python]
+      - id: coverage
+        name: project-coverage
+        description: runs coverage report
+        entry: poetry run coverage report
         files: ^({{cookiecutter.project_name.lower().replace('-', '_')}}/|tests/)
         language: system
         types: [python]
