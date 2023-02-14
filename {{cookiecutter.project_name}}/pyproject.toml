@@ -192,7 +192,7 @@ xfail_strict = true
 
 [tool.coverage.run]
 source = [
-    "erm_reporting"
+    "{{cookiecutter.project_name.lower().replace('-', '_')}}/"
 ]
 command_line = "-m pytest"
 
