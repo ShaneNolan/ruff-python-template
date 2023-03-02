@@ -25,8 +25,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"charliermarsh.ruff@2023.6.0",
-				"EditorConfig.EditorConfig"
+				"charliermarsh.ruff@2023.9.10540339"
 			]
 		}
 	}
