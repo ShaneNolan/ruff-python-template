@@ -12,7 +12,7 @@ python = ">=3.10,<4.0"
 mypy = "^0.991"
 pytest = "^7.2.1"
 pre-commit = "^3.0.2"
-ruff = "0.0.239"
+ruff = "0.0.252"
 black = "^23.1.0"
 coverage = "^7.1.0"
 
