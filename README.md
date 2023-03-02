@@ -8,4 +8,3 @@
 ## VSCode Plugins Required
 
 * [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
-* [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
